@@ -12,7 +12,9 @@ jobs:
 
     # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
     name: Build, Test, and Lint
-    runs-on: macOS-latest
+    # https://docs.github.com/en/actions/hosting-your-own-runners/using-self-hosted-runners-in-a-workflow
+    # https://github.com/mas-cli/mas/settings/actions/runners
+    runs-on: [self-hosted, macOS]
     steps:
 
       # https://github.com/actions/checkout#usage
